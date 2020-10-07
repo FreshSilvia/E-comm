@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+header{
+      background-color: #000000;
+      width: 100%;
+      z-index: 5;
+      position: fixed;
+  }
+
+  .wrapper{
+      width: 90%;
+      margin: auto;
+  }
+
+  .logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+  }
+  .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: serif;
+    color: #ffffff;
+    letter-spacing: 5px;
+  }
+  .logo a:hover{
+    color: #ffff00;
+  }
+  nav{
+    float: right;
+    line-height: 100px;
+  }
+  nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  /* Hover has to be on the colan */
+  nav a:hover{
+    color: #ffff00;
+}
+.hero-image{
+  background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url(https://images.unsplash.com/photo-1514046877476-ccde53bfc372?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 100px;
+}
+
+.hero-text{
+  color: white;
+  font-family: serif;
+  padding: 8%;
+  font-size: 50px;
+}
+
+.drifting{
+display: inline-block;
+padding: 5px;
+margin-top: 150px;
+box-shadow: 0px 0px 100px #33ccff;
+}
+/* Boxes for Activities and Info */
+.boxes{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3 , 1fr);
+  align-content: space-evenly;
+  grid-gap: 25px;
+  font-family: serif;
+}
+.box{
+  box-shadow: 0 0 20px #33ccff;
+  display: block;
+  background-color: black;
+  margin: 8px;
+}
+.box-image{
+  width: 100%;
+  height: 210px;
+  display: block;
+}
+.box-info{
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  margin-top: 0;
+  display: block;
+}
+
+.price{
+  color: grey;
+  font-size: 180%;
+}
+
+.box button{
+  border: none;
+  outline: 0px;
+  padding: 12px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10%;
+  font-size: 18px;
+  position: relative;
+  margin-top: 25%;
+}
+
+.box button:hover{
+  opacity: 0.7;
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: block;
+  top: 20px;
+}
+
+.fa{
+  padding:25px;
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 4px;
+  border-radius: 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.fa-instagram{
+  background-color: #d6249f;
+  color: white;
+}
+
+.fa-twitter{
+  background-color: #04456d;
+  color: white;
+}
+footer img{
+  float: left;
+  display: block;
+  margin: -60px 60px;
+}
+
+@media screen and (max-width: 800px){
+  .boxes{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2 , 1fr);
+    align-content: space-evenly;
+    grid-gap: 25px;
+    font-family: serif;
+  }
+
+  footer img{
+    float: left;
+    display: block;
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+
+}
+
+@media screen and (min-width: 801px){
+  .boxes{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3 , 1fr);
+    align-content: space-evenly;
+    grid-gap: 25px;
+    font-family: serif;
+  }
+  
+  footer img{
+    float: left;
+    display: block;
+    margin: -60px 60px;
+  }
+  
+
+}
